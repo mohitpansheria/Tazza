@@ -1,0 +1,12 @@
+@mixin bg-image ($bg-img, $bg-img-position) {
+    background-image: $bg-img;
+    background-position: $bg-img-position;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin font-roboto ($font, $font-weight, $font-size) {
+    font-family: $font;
+    font-weight: $font-weight;
+    font-size: $font-size;
+}

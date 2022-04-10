@@ -1,0 +1,105 @@
+@import "../../sass/Mixin.scss";
+@import "../../sass/Variable.scss";
+
+
+.blog-details p {
+    color: #434748;
+    @include font-roboto(roboto, 400, 1rem);
+    line-height: 1.6;
+    padding: .5rem 0;
+}
+
+.blog-highlited-details {
+    @include bg-image(url(../assets/details_bg1.jpg), center center);
+    padding: 2.1rem 1.5rem;
+}
+
+.blog-highlited-details p {
+    color: $primary-color;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.blog-details strong,
+.blog-comments strong {
+    color: $primary-color;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+.tags {
+    padding: .6rem 1rem;
+    background: #E2F6DE;
+
+    & span:first-child {
+        color: $primary-color;
+        @include font-roboto(roboto, 700, 1rem);
+    }
+
+    & span a {
+        color: $primary-color;
+        padding-left: 1rem;
+    }
+
+
+    .social-icons {
+
+        & .icon-list {
+            margin-right: 0.8rem;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            // display: inline-block;
+            background-color: transparent;
+            text-align: center;
+            line-height: 38px;
+            border: 1px solid #7a7a7a;
+            transition: all 0.3s;
+
+
+            & .icon-round {
+                color: #000;
+            }
+
+            &:hover .icon-round {
+                color: #fff;
+            }
+
+            &:hover {
+                background: linear-gradient(90deg, #006600 0%, #6DC81B 100%);
+                color: #FFF;
+            }
+        }
+    }
+}
+
+.customer-info strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.customer-image {
+    width: 250px;
+}
+
+.customer-info span {
+    color: #7D52CC;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.customer-info p {
+    font-size: 1rem;
+    color: $primary-color;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.blog-form {
+    @include bg-image(url(../assets/FormBg.svg), center);
+}

@@ -1,0 +1,29 @@
+@import "../../sass/Mixin.scss";
+@import "../../sass/Variable.scss";
+
+.hero_section {
+    @include bg-image(url(../assets/product_hero_section_bg.jpg), center !important);
+    padding-top: 9.4rem;
+    padding-bottom: 7.5rem;
+    position: relative;
+    margin-bottom: 6.25rem;
+
+    .png_img {
+        position: absolute;
+        width: 200px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .herosection_content {
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 0.6rem;
+            text-transform: capitalize;
+        }
+    }
+}

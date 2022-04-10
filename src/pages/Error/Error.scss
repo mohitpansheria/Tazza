@@ -1,0 +1,12 @@
+@import "../../sass/Mixin.scss";
+
+.error-message h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.error-message p {
+    color: #535656;
+    @include font-roboto(roboto, 400, 1.25rem);
+    line-height: 1.5;
+}

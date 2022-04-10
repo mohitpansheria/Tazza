@@ -1,0 +1,18 @@
+@import "../../sass/Mixin.scss";
+
+.input-type {
+    color: #03262c !important;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    @include font-roboto(roboto, 400, 1rem);
+    height: 2.8rem;
+
+    &:focus {
+        border-color: transparent;
+        background-color: #03262c;
+        box-shadow: none;
+        color: #fff !important;
+        @include font-roboto(roboto, 400, 1rem);
+    }
+
+}

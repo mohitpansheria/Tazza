@@ -1,0 +1,32 @@
+@import "../../sass/Variable.scss";
+@import "../../sass/Mixin.scss";
+
+/* Product Tag */
+.product-tag {
+    padding: 1.2rem 1.8rem;
+    margin-top: 2rem;
+
+    & .tag-title h4 {
+        color: #03262ce1;
+        font-weight: 700;
+        font-size: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .product-tag-button .tag-list {
+        @include font-roboto(roboto, 400, 1rem);
+        color: $primary-color;
+        padding: .6rem 1.8rem;
+        border: 1px solid #e9f8e6;
+        display: inline-block;
+        text-align: center;
+        margin: 5px;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .product-tag-button .tag-list:hover {
+        border: 1px solid #5cb917;
+
+    }
+}

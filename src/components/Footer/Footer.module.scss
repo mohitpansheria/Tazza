@@ -1,0 +1,108 @@
+@import "../../sass/Mixin.scss";
+
+.footerBg {
+    background: url(../../assets/FooterBg.svg) top center no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+    .footer-main-title {
+        font-weight: 700;
+        font-size: 40px;
+        color: #fff;
+        padding-bottom: 45px;
+        text-transform: capitalize;
+        line-height: 1.1;
+    }
+
+    .footer-contact-title {
+        @include font-roboto(roboto, 500, 1rem);
+        float: left;
+        line-height: 2;
+        width: 25%;
+        margin-top: 2px;
+        color: #FFF;
+    }
+
+    .footer-contact-detial {
+        @include font-roboto(roboto, 500, 1rem);
+        float: left;
+        line-height: 2;
+        width: 50%;
+        margin-top: 2px;
+        color: #54B215;
+    }
+
+
+    .social-icons {
+
+        & .icon-list {
+            margin-right: 12px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #fff;
+            text-align: center;
+            line-height: 38px;
+            /* border: 1px solid #7a7a7a; */
+            transition: all 0.3s;
+
+
+            & .icon-round {
+                color: #000;
+            }
+
+            &:hover .icon-round {
+                color: #fff;
+            }
+
+            &:hover {
+                background: linear-gradient(90deg, #006600 0%, #6DC81B 100%);
+                color: #FFF;
+            }
+        }
+    }
+
+    .footer-detial {
+        @include font-roboto(roboto, 500, 1rem);
+        color: #D6DBE6;
+        text-transform: capitalize;
+        line-height: 2;
+
+        &:hover {
+            color: #54B215;
+        }
+    }
+
+    .icon-right {
+        font-size: 20px;
+        color: #D6DBE6;
+        padding-right: 15px;
+        transition: all 0.3s;
+
+        &:hover {
+            color: #54B215;
+        }
+    }
+
+}
+
+.footer-copyright {
+    background: linear-gradient(to right, #0f7404, #5cb917);
+
+    .footer-txt {
+        font-size: 16px;
+        color: #FFF;
+        padding-top: 15px;
+        font-weight: 500;
+        padding-bottom: 15px;
+
+        & .footer-main-name {
+            color: #FFF;
+            font-weight: 700;
+        }
+    }
+}

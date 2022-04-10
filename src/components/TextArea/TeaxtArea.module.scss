@@ -1,0 +1,17 @@
+@import "../../sass/Mixin.scss";
+
+.textArea-type {
+    color: #03262c !important;
+    transition: all 0.3s;
+    padding: 10px 20px;
+    @include font-roboto(roboto, 400, 1rem);
+
+    &:focus {
+        border-color: transparent;
+        background-color: #03262c;
+        box-shadow: none;
+        color: #fff !important;
+        font-family: roboto, arial, helvetica;
+    }
+
+}

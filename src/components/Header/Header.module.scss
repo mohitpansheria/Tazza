@@ -1,0 +1,191 @@
+@import "../../sass/Mixin.scss";
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    z-index: 2;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 999;
+    transition: all 0.3s;
+
+
+    .navBg {
+        @include bg-image(url(../assets/header-bg.png), center center);
+        padding: 10px 50px;
+
+        .navbar-toggler-item {
+            color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            outline: transparent;
+        }
+
+        .nav-list .header-link {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            position: relative;
+            padding: 5px 20px;
+            margin: 0px 2px;
+            z-index: 1;
+
+            .header-link:focus,
+            .header-link:hover {
+                color: #fafafa;
+            }
+        }
+
+        .navbar-brand {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-right: 0rem;
+            width: 75px;
+            margin-bottom: 0px;
+            margin-top: -10px;
+        }
+
+
+        .header-link:hover {
+            background: url(../../assets/Hover.svg) center center no-repeat;
+            background-size: cover;
+        }
+
+        .header-content {
+            display: inline-block;
+            display: flex;
+
+            .contact-details {
+                display: inline-block;
+
+                & .call-us {
+                    color: #60cd12;
+                    display: block;
+                    font-weight: 700;
+                    font-size: 14px;
+                    margin-right: 10px;
+
+                }
+
+                & .contact-no {
+                    color: #fff;
+                    font-size: 16px;
+                }
+            }
+
+            .cart-icon {
+                height: 45px;
+                width: 45px;
+                text-align: center;
+                background-color: #13424a;
+                border-radius: 50%;
+                margin-left: 30px;
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+
+
+                & .cart__icon {
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 1.9;
+                }
+
+                & .cart-round {
+                    position: absolute;
+                    top: 0px;
+                    right: -5px;
+                    height: 18px;
+                    width: 18px;
+                    text-align: center;
+                    background-color: #51af14;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    font-weight: 600;
+                    color: #fff;
+                    line-height: 1.9;
+                }
+            }
+
+        }
+
+        .dropdown-menus {
+            background-color: #03262c;
+        }
+
+        .dropdown-items {
+            color: #ffffff;
+        }
+
+        .dropdown-items:focus,
+        .dropdown-items:hover {
+            color: #ffffff;
+            text-decoration: none;
+            background: url(../../assets/Hover.svg) center center no-repeat;
+            background-size: cover;
+        }
+
+    }
+}
+
+
+
+@media screen and (max-width: 1599px) {
+    .navbar {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 1399px) {
+    .navbar {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .navbar {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 491px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../sass/Mixin.scss";
+
+.checkOut {
+
+    & .order-content {
+
+        & .order-details {
+
+            & h2 {
+                color: #232323;
+                font-weight: 700;
+                font-size: 1.8rem;
+            }
+
+            & p {
+                color: #555555;
+                @include font-roboto(roboto, 400, 1rem);
+                line-height: 1.4;
+                padding-top: 2rem;
+            }
+        }
+
+    }
+
+
+    & .payment-method {
+        & thead th {
+            background: #E2F6DE;
+            color: #232323;
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+    }
+
+    & .billing-head {
+
+        & h2 {
+            color: #232323;
+            font-size: 1.7rem;
+            font-weight: 700;
+            padding-bottom: 1.8rem;
+
+        }
+    }
+}

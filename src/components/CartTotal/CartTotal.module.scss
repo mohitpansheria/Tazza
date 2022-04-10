@@ -1,0 +1,32 @@
+@import "../../sass/Mixin.scss";
+
+.cart-total-section {
+
+    .cart-total-heading {
+        border: none;
+        background-color: #03262c;
+        font-size: 1.1rem;
+        color: #FFF;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cart-total tr,
+    tfoot tr {
+        color: #232323;
+        @include font-roboto(roboto, 400, 1rem);
+
+    }
+
+    .cart-total tr td {
+        color: #767676;
+        @include font-roboto(roboto, 400, 1rem);
+
+    }
+
+    tfoot td {
+        color: #5AB717;
+        @include font-roboto(roboto, 400, 1.5rem);
+
+    }
+}

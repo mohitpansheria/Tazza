@@ -1,0 +1,75 @@
+@import "../../sass/Mixin.scss";
+@import "../../sass/Variable.scss";
+
+/* Right Section */
+
+.blog-right {
+
+    & .blog-publish-date span {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 1rem;
+
+        & .blog-date-icon {
+            color: #52AF15;
+            font-weight: 400;
+            padding-right: 1rem;
+        }
+    }
+
+    & .blog-publish-activity span {
+        color: $primary-color;
+        font-weight: 700;
+        font-size: 1rem;
+
+        & .blog-activity-icon {
+            color: #52AF15;
+            font-weight: 400;
+            padding-right: .8rem;
+            padding-left: 1.5rem;
+        }
+
+    }
+
+    & .blog-title h4 a {
+        color: $primary-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.2;
+        padding: 1rem 0;
+    }
+
+    & .blog-title a {
+        color: #293F73;
+        @include font-roboto(roboto, 700, 1rem);
+    }
+}
+
+.page-number {
+
+    & .list-group-num {
+        margin: .4rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        display: inline-block;
+        border: 1px solid #D1DECE;
+        border-radius: 50%;
+        line-height: 43px;
+        transition: all 0.3s;
+        cursor: pointer;
+        position: relative;
+    }
+
+    & .list-group-num:hover {
+        background: linear-gradient(90deg, #006600 0%, #6DC81B 100%);
+    }
+
+    & .list-group-num .number {
+        color: #575564;
+        @include font-roboto(roboto, 700, 1rem);
+    }
+
+    & .list-group-num:hover .number {
+        color: #fff;
+    }
+}
